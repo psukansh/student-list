@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student - list</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<div class="container">
+		<h1>Player list website</h1>
+
+
+		<div class="main">
+			<div class="box">
+				<img src="./images/virat-kohli.webp" alt="" srcset="">
+				<h3>Virat Kohli</h3>
+				<div class="info" id="info1">
+					<table>
+						<tr>
+							<td style="font-weight:bold">Name :</td>
+							<td>Virat Kohli</td>
+						</tr>
+
+						<tr>
+							<td style="font-weight:bold">roll .no</td>
+							<td>27</td>
+						</tr>
+			<tr>
+							<td style="font-weight:bold">age</td>
+							<td>20</td>
+						</tr>
+					</table>
+				</div>
+				<button type="submit" id="buttonOne" onclick="functionOne()">See More</button>
+				<button type="submit" id="buttonOnes" onclick="functionLessOne()">See Less</button>
+			</div>
+
+			<div class="box">
+				<img src="./images/rohit.webp" alt="" srcset="">
+				<h3>Rohit sharma</h3>
+				<div class="info" id="info2">
+					<table>
+						<tr>
+							<td style="font-weight:bold">Name :</td>
+							<td>Rohit sharma</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold" >roll .no</td>
+							<td>28</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold">age</td>
+							<td>21</td>
+						</tr>
+					</table>
+				</div>
+				<button type="submit" id="buttonTwo" onclick="functionTwo()">See More</button>
+				<button type="submit" id="buttonTwos" onclick="functionLessTwo()">See Less</button>
+			</div>
+
+			<div class="box">
+				<img src="./images/kl rahul.jpg" alt="" srcset="">
+				<h3>Kl Rahul</h3>
+				<div class="info" id="info3">
+					<table>
+						<tr>
+							<td style="font-weight:bold">Name :</td>
+							<td>Kl Rahul</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold" >roll .no</td>
+							<td>29</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold">age</td>
+							<td>20</td>
+						</tr>
+					</table>
+				</div>
+				<button type="submit" id="buttonThree" onclick="functionThree()">See More</button>
+				<button type="submit" id="buttonThrees" onclick="functionLessThree()">See Less</button>
+			</div>
+
+			<div class="box">
+				<img src="./images/dhoni.jpg" alt="" srcset="">
+				<h3>MS dhoni</h3>
+				<div class="info" id="info4">
+					<table>
+						<tr>
+							<td style="font-weight:bold">Name :</td>
+							<td>MS dhoni</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold" >roll .no</td>
+							<td>30</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold">age</td>
+							<td>20</td>
+						</tr>
+					</table>
+				</div>
+				<button type="submit" id="buttonFour" onclick="functionFour()">See More</button>
+				<button type="submit" id="buttonFours" onclick="functionLessFour()">See Less</button>
+			</div>
+
+			<div class="box">
+				<img src="./images/shami.webp" alt="" srcset="">
+				<h3>Mh. shami</h3>
+				<div class="info" id="info5">
+					<table>
+						<tr>
+							<td style="font-weight:bold">Name :</td>
+							<td>Mh. shami</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold" >roll .no</td>
+							<td>31</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold">age</td>
+							<td>20</td>
+						</tr>
+					</table>
+				</div>
+				<button type="submit" id="buttonFive" onclick="functionFive()">See More</button>
+				<button type="submit" id="buttonFives" onclick="functionLessFive()">See Less</button>
+			</div>
+
+			<div class="box">
+				<img src="./images/bumrah.jpg" alt="" srcset="">
+				<h3>Jasprit bumrah</h3>
+				<div class="info" id="info6">
+					<table>
+						<tr>
+							<td style="font-weight:bold">Name :</td>
+							<td>Jasprit bumrah</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold" >roll .no</td>
+							<td>32</td>
+						</tr>
+						<tr>
+							<td style="font-weight:bold">age</td>
+							<td>20</td>
+						</tr>
+					</table>
+				</div>
+				<button type="submit" id="buttonSix" onclick="functionSix()">See More</button>
+				<button type="submit" id="buttonSixs" onclick="functionLessSix()">See less</button>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script>
+
+	let info1 = document.getElementById('info1');
+	let buttonOne = document.getElementById('buttonOne');
+
+	let info2 = document.getElementById('info2');
+	let buttonTwo = document.getElementById('buttonTwo');
+
+	let info3 = document.getElementById('info3');
+	let buttonThree = document.getElementById('buttonThree');
+
+	let info4 = document.getElementById('info4');
+	let buttonFour = document.getElementById('buttonFour');
+
+	let info5 = document.getElementById('info5');
+	let buttonFive = document.getElementById('buttonFive');
+
+	let info6 = document.getElementById('info6');
+	let buttonSix = document.getElementById('buttonSix');
+
+	function functionOne() {
+		info1.style.display = "block";
+		buttonOne.style.display = "none";
+		buttonOnes.style.display = "block";
+	}
+
+	function functionLessOne() {
+		info1.style.display = "none";
+		buttonOnes.style.display = "none";
+		buttonOne.style.display = "block";
+	}
+
+
+	function functionTwo() {
+		info2.style.display = "block";
+		buttonTwo.style.display = "none";
+		buttonTwos.style.display = "block";
+	}
+	function functionLessTwo() {
+		info2.style.display = "none";
+		buttonTwos.style.display = "none";
+		buttonTwo.style.display = "block";
+	}
+
+
+	function functionThree() {
+		info3.style.display = "block";
+		buttonThree.style.display = "none";
+		buttonThrees.style.display = "block";
+	}
+	function functionLessThree() {
+		info3.style.display = "none";
+		buttonThrees.style.display = "none";
+		buttonThree.style.display = "block";
+	}
+
+	function functionFour() {
+		info4.style.display = "block";
+		buttonFour.style.display = "none";
+		buttonFours.style.display = "block";
+	}
+	function functionLessFour() {
+		info4.style.display = "none";
+		buttonFours.style.display = "none";
+		buttonFour.style.display = "block";
+	}
+
+	function functionFive() {
+		info5.style.display = "block";
+		buttonFive.style.display = "none";
+		buttonFives.style.display = "block";
+	}
+	function functionLessFive() {
+		info5.style.display = "none";
+		buttonFives.style.display = "none";
+		buttonFive.style.display = "block";
+	}
+
+	function functionSix() {
+		info6.style.display = "block";
+		buttonSix.style.display = "none";
+		buttonSixs.style.display = "block";
+	}
+	function functionLessSix() {
+		info6.style.display = "none";
+		buttonSixs.style.display = "none";
+		buttonSix.style.display = "block";
+	}
+</script>
+
+</html>
